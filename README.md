@@ -27,7 +27,7 @@ npm run e2e
 npm test
 ```
 
-使用组建 在项目中npm install lz-components
+使用组建 在项目中npm install lz-components -D
 
 在项目的main.js中引入
 import lzcomponents from 'lz-components'
