@@ -13,10 +13,6 @@
           addressChoose
         </router-link>
       </li>
-      <br>
-      <li>
-
-      </li>
     </ul>
     <h2>Ecosystem</h2>
     <ul>
@@ -47,7 +43,7 @@
 <script>
   export default {
     name: 'HelloWorld',
-    data() {
+    data () {
       return {
         msg: 'Welcome to Your Vue.js App'
       }
