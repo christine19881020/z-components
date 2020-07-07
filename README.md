@@ -34,7 +34,9 @@ import lzcomponents from 'lz-components'
 Vue.use(lzcomponents)
 
 在页面中直接使用 本项目中的组建
-<df-vue></df-vue>
+<df-vue></df-vue> 
+<address-choose></address-choose>  //中国地址省市区县 选择组建 基于elementui 联动
+
 
 
 
