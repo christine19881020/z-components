@@ -1,5 +1,5 @@
 <template>
-  <el-row>
+  <el-row :gutter="20">
     <el-col :span="8">
       <el-select v-model="privince" placeholder="请选择省" @change="setCityOptionsFn">
         <el-option v-for="item in provinceOptions" :key="item.label" :label="item.label" :value="item.label">
@@ -64,4 +64,7 @@
 </script>
 
 <style>
+  .el-select {
+    width: 100%;
+  }
 </style>
