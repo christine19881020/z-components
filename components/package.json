@@ -1,14 +1,14 @@
 {
-	"name": "lz-components",
-	"version": "1.2.0",
-	"description": "lz-components",
-	"main": "dist/lz-components.min.js",
-	"private": false,
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "rimraf ./dist && webpack --config ./webpack.config.js"
-	},
-	"devDependencies": {
+  "name": "lz-components",
+  "version": "1.2.0",
+  "description": "lz-components",
+  "main": "dist/lz-components.min.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist && webpack --config ./webpack.config.js"
+  },
+  "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-runtime": "^6.9.0",
@@ -29,6 +29,9 @@
     "webpack": "1.13.1",
     "webpack-merge": "^4.1.0"
   },
-	"author": "",
-	"license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "element-ui": "^2.13.2"
+  }
 }
