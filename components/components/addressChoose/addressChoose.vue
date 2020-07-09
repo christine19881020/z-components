@@ -1,5 +1,5 @@
 <template>
-  <el-row :gutter="20">
+  <el-row :gutter="gutter">
     <el-col :span="8">
       <el-select v-model="privince" placeholder="请选择省" @change="setCityOptionsFn">
         <el-option v-for="item in provinceOptions" :key="item.label" :label="item.label" :value="item.label">
@@ -27,6 +27,16 @@
   } from './cityCode.js'
   export default {
     name: 'addressChoose',
+    props: {
+      gutter: {
+        type: Number,
+        default: 0
+      },
+      initChoosed: {
+        type: Array,
+        default: []
+      }
+    },
     data() {
       return {
         privince: '',
@@ -55,6 +65,19 @@
           return x.label == city
         })
         this.regionOptions = ob.area;
+      }
+    },
+    watch: {
+      initChoosed: function(newv, oldv) {
+        if (newv.length > 0) {
+          this.province = newv[0];
+          this.city = newv[1];
+          this.region = newv[2];
+        } else {
+          this.province = "";
+          this.city = "";
+          this.regions = "";
+        }
       }
     },
     mounted() {
