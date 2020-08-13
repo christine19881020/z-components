@@ -1,6 +1,6 @@
 {
   "name": "lz-components",
-  "version": "1.10.0",
+  "version": "1.12.0",
   "description": "lz-components",
   "main": "dist/lz-components.min.js",
   "private": false,
